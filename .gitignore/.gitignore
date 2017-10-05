@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    int x;
+    cout<<"1.-Numero Primo: "<<endl;
+    cout<<"2.-Factorial: "<<endl;
+    cout<<"3.-Promedir Calificaciones: "<<endl;
+    cout<<"0.-SALIR: "<<endl;
+    cin>>x;
+
+    if(x==1)
+        {
+        int n,c=0;
+    cout<<"Dame un numero: ";
+    cin>>n;
+    for(int i=1;i<=n;i++)
+        {
+        if(n%i==0)
+        {
+            c++;
+        }
+        }
+        if(c==2)
+        {
+            cout<<"Es Primo!";
+        }
+        else
+        {
+            cout<<"NO Es Primo!!";
+        }
+
+
+        }
+        if(x==2)
+    {
+        int q,r=1;
+        cout<<"Dame Un Numero: ";
+        cin>>q;
+
+        for(int i=1;i<=q;i++)
+        {
+            r*=i;
+        }
+        cout<<"El Factorial De: "<<q<<" Es"<<r;
+
+    }
+    if(x==3)
+    {
+        int n,x=0,suma=0;
+        float p;
+        do{
+        cout<<"Dame Calificaciones: ";
+        cin>>n;
+        suma+=n;
+        x++;
+        }while(n!=(-1));
+        p=(1+suma)/(x-1.00);
+        cout<<"Tu Promedio Es: "<<p;
+    }
+    if(x==0)
+    {
+        cout<<"ADIOS!!";
+    }
+
+        return 0;
+}
+
